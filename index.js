@@ -23,7 +23,7 @@ function getContainer () {
  */
 function XEClipboard (content) {
   var $copy = getContainer()
-  var value = content || ''
+  var value = '' + (content || '')
   try {
     $copy.value = value
     $copy.focus()
