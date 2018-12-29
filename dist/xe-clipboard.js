@@ -1,5 +1,5 @@
 /**
- * xe-clipboard.js v1.0.0-beta.0
+ * xe-clipboard.js v1.0.0
  * (c) 2017-2018 Xu Liangzhan
  * ISC License.
  * @preserve
