@@ -30,8 +30,6 @@ import XEClipboard from 'xe-clipboard'
 ## Example
 
 ```JavaScript
-import XEClipboard from 'xe-clipboard'
-
 document.querySelector('.button').addEventListener('click', evnt => {
   if (XEClipboard.copy('Copy this content to the clipboard.')) {
     alery('Copy success.')
