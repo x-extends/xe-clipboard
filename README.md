@@ -17,17 +17,13 @@ It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API
 
 ```JavaScript
 npm install xe-clipboard --save
-```
 
-```JavaScript
 import XEClipboard from 'xe-clipboard'
 ```
 
 ```HTML
 <script src="https://cdn.jsdelivr.net/npm/xe-clipboard/dist/xe-clipboard.js"></script>
-```
 
-```HTML
 <script src="https://unpkg.com/xe-clipboard/dist/xe-clipboard.js"></script>
 ```
 
