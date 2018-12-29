@@ -28,9 +28,9 @@
   }
 
   /**
-   * 复制文本到剪贴板
+   * Copy the contents to the clipboard.
    *
-   * @param {String} content 文本内容
+   * @param {String} content Content
    */
   function XEClipboard (content) {
     var $copy = getContainer()
