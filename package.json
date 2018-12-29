@@ -1,0 +1,46 @@
+{
+  "name": "xe-clipboard",
+  "version": "1.0.0",
+  "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
+  "main": "index.js",
+  "typings": "types/index.d.ts",
+  "scripts": {
+    "lint": "eslint dist/xe-clipboard.js index.js",
+    "test": "npm run lint"
+  },
+  "files": [
+    "src",
+    "types",
+    "dist"
+  ],
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "markdown-doctest": "^0.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuliangzhan/xe-clipboard.git"
+  },
+  "keywords": [
+    "clipboard",
+    "vue-clipboard",
+    "vxe-clipboard",
+    "xe-clipboard",
+    "XEclipboard"
+  ],
+  "author": {
+    "name": "Xu Liangzhan",
+    "email": "xu_liangzhan@163.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xuliangzhan/xe-clipboard/issues"
+  },
+  "homepage": "https://github.com/xuliangzhan/xe-clipboard#readme"
+}
