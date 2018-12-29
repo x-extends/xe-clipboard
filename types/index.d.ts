@@ -7,7 +7,7 @@ export interface XEClipboardMethods {
 }
 
 /**
- * Using JavaScript copy the text to the clipboard.
+ * Copy the contents to the clipboard.
  */
 declare var XEClipboard: XEClipboardMethods;
 
