@@ -1,7 +1,7 @@
 {
   "name": "xe-clipboard",
   "version": "1.0.0",
-  "description": "Using JavaScript copy the text to the clipboard,Support IE、Chrome、Firefox、Opera、Safari、IOS、Android.",
+  "description": "Copy the contents to the clipboard, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android.",
   "main": "index.js",
   "typings": "types/index.d.ts",
   "scripts": {
@@ -29,8 +29,6 @@
   },
   "keywords": [
     "clipboard",
-    "vue-clipboard",
-    "vxe-clipboard",
     "xe-clipboard",
     "XEclipboard"
   ],
