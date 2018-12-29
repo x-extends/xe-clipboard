@@ -5,7 +5,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/xe-clipboard.svg?style=flat-square)](http://npm-stat.com/charts.html?package=xe-clipboard)
 [![npm license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/xuliangzhan/xe-clipboard/blob/master/LICENSE)
 
-XEClipboard 使用原生 js 实现复制文本到剪贴板的函数，支持常用 H5 的浏览器 IE、Chrome、Firefox、Opera、Safari、IOS、Android，压缩后还不到1KB的轻量级 copy 函数
+It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) APIs, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android, compressed less than 1KB clipboard copy function.
 
 ## Browser Support
 
