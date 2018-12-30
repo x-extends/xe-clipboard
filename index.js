@@ -23,15 +23,14 @@ function getContainer () {
  */
 function XEClipboard (content) {
   var $copy = getContainer()
-  var value = '' + content
+  var value = content === null || content === undefined ? '' : '' + content
   try {
     $copy.value = value
     $copy.focus()
     $copy.setSelectionRange(0, value.length)
     return document.execCommand('copy', true)
-  } catch (e) {
-    return false
-  }
+  } catch (e) {}
+  return false
 }
 
 XEClipboard.copy = XEClipboard
