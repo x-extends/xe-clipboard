@@ -15,7 +15,7 @@ It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API
 
 ## Installing
 
-```JavaScript
+```javascript
 npm install xe-clipboard --save
 
 import XEClipboard from 'xe-clipboard'
@@ -29,7 +29,7 @@ import XEClipboard from 'xe-clipboard'
 
 ## Example
 
-```JavaScript
+```javascript
 document.querySelector('.button').addEventListener('click', evnt => {
   if (XEClipboard.copy('Copy this content to the clipboard.')) {
     alery('Copy success.')
