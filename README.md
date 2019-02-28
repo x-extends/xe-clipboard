@@ -20,9 +20,7 @@ It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API
 npm install xe-clipboard --save
 ```
 
-```javascript
-import XEClipboard from 'xe-clipboard'
-```
+在 [unpkg](https://unpkg.com/xe-clipboard/) 和 [cdnjs](https://cdn.jsdelivr.net/npm/xe-clipboard/) 上获取
 
 ```HTML
 <script src="https://unpkg.com/xe-clipboard/dist/xe-clipboard.min.js"></script>
