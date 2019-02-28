@@ -23,9 +23,9 @@ import XEClipboard from 'xe-clipboard'
 ```
 
 ```HTML
-<script src="https://cdn.jsdelivr.net/npm/xe-clipboard/dist/xe-clipboard.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xe-clipboard/dist/xe-clipboard.min.js"></script>
 
-<script src="https://unpkg.com/xe-clipboard/dist/xe-clipboard.js"></script>
+<script src="https://unpkg.com/xe-clipboard/dist/xe-clipboard.min.js"></script>
 ```
 
 ## Example
