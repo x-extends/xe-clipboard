@@ -28,10 +28,12 @@ Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr
 
 ## Example
 
+[Run this demo on jsfiddle.net](https://jsfiddle.net/fjvckd2a/)
+
 ```javascript
 document.querySelector('.button').addEventListener('click', evnt => {
   if (XEClipboard.copy('Copy this content to the clipboard.')) {
-    alery('Copy success.')
+    alert('Copy success.')
   } else {
     alert('The browser is not supported.')
   }
