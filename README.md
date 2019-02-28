@@ -16,15 +16,15 @@ It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API
 
 ## Installing
 
-```javascript
+```shell
 npm install xe-clipboard --save
+```
 
+```javascript
 import XEClipboard from 'xe-clipboard'
 ```
 
 ```HTML
-<script src="https://cdn.jsdelivr.net/npm/xe-clipboard/dist/xe-clipboard.min.js"></script>
-
 <script src="https://unpkg.com/xe-clipboard/dist/xe-clipboard.min.js"></script>
 ```
 
