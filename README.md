@@ -23,7 +23,7 @@ npm install xe-clipboard --save
 Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr.net/npm/xe-clipboard/)
 
 ```HTML
-<script src="https://unpkg.com/xe-clipboard/dist/xe-clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xe-clipboard"></script>
 ```
 
 ## Example
