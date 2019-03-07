@@ -1,9 +1,11 @@
 'use strict'
 
+var doc = window.document
+
 function getContainer () {
-  var $copy = document.getElementById('$XECopy')
+  var $copy = doc.getElementById('$XECopy')
   if (!$copy) {
-    $copy = document.createElement('input')
+    $copy = doc.createElement('input')
     $copy.id = '$XECopy'
     $copy.style['width'] = '48px'
     $copy.style['height'] = '12px'
@@ -11,7 +13,7 @@ function getContainer () {
     $copy.style['z-index'] = '0'
     $copy.style['left'] = '-500px'
     $copy.style['top'] = '-500px'
-    document.body.appendChild($copy)
+    doc.body.appendChild($copy)
   }
   return $copy
 }
@@ -28,7 +30,7 @@ function XEClipboard (content) {
     $copy.value = value
     $copy.focus()
     $copy.setSelectionRange(0, value.length)
-    return document.execCommand('copy', true)
+    return doc.execCommand('copy', true)
   } catch (e) {}
   return false
 }
