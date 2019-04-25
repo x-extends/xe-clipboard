@@ -17,7 +17,7 @@ It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API
 ## Installing
 
 ```shell
-npm install xe-clipboard --save
+npm install xe-clipboard
 ```
 
 Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr.net/npm/xe-clipboard/)
