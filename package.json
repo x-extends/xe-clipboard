@@ -1,6 +1,6 @@
 {
   "name": "xe-clipboard",
-  "version": "1.1.0",
+  "version": "1.0.4",
   "description": "Copy the contents to the clipboard, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android.",
   "main": "dist/index.common.js",
   "unpkg": "dist/index.js",
