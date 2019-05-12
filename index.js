@@ -37,5 +37,4 @@ function XEClipboard (content) {
 
 XEClipboard.copy = XEClipboard
 
-module.exports = XEClipboard
-module.exports.default = XEClipboard
+export default XEClipboard
