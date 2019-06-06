@@ -1,11 +1,11 @@
 {
   "name": "xe-clipboard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Copy the contents to the clipboard, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android.",
-  "main": "dist/index.common.js",
-  "unpkg": "dist/index.js",
-  "jsdelivr": "dist/index.js",
-  "typings": "index.d.ts",
+  "main": "index.js",
+  "unpkg": "dist/xe-utils.js",
+  "jsdelivr": "dist/xe-utils.js",
+  "typings": "types/index.d.ts",
   "scripts": {
     "lib": "gulp build",
     "lint": "eslint index.js",
