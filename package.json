@@ -1,10 +1,10 @@
 {
   "name": "xe-clipboard",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Copy the contents to the clipboard, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android.",
   "main": "index.js",
-  "unpkg": "dist/xe-utils.js",
-  "jsdelivr": "dist/xe-utils.js",
+  "unpkg": "dist/xe-clipboard.js",
+  "jsdelivr": "dist/xe-clipboard.js",
   "typings": "types/index.d.ts",
   "scripts": {
     "lib": "gulp build",
@@ -46,7 +46,8 @@
   },
   "keywords": [
     "clipboard",
-    "xe-clipboard"
+    "xe-clipboard",
+    "xe-utils"
   ],
   "author": {
     "name": "Xu Liangzhan",
