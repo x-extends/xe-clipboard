@@ -5,7 +5,7 @@ var doc = window.document
 function getContainer () {
   var $copy = doc.getElementById('$XECopy')
   if (!$copy) {
-    $copy = doc.createElement('input')
+    $copy = doc.createElement('textarea')
     $copy.id = '$XECopy'
     $copy.style['width'] = '48px'
     $copy.style['height'] = '12px'
