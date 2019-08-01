@@ -51,15 +51,17 @@
     </div>
     <script>
     (function () {
+      var showtimeout
       function copyEvent (text) {
+        clearTimeout(showtimeout)
         if (XEClipboard.copy(text)) {
           document.querySelector('.copy-status').className = 'copy-status success'
         } else {
           document.querySelector('.copy-status').className = 'copy-status error'
         }
-        setTimeout(function () {
+        showtimeout = setTimeout(function () {
           document.querySelector('.copy-status').className = 'copy-status'
-        }, 3000)
+        }, 5000)
       }
       document.querySelector('.btn1').addEventListener('click', function (evnt) {
         copyEvent(evnt.target.innerText)
