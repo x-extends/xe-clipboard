@@ -30,8 +30,12 @@ Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr
 
 [Run this demo on jsfiddle.net](https://jsfiddle.net/fjvckd2a/)
 
+```html
+<button class="button">复制</button>
+```
+
 ```javascript
-document.querySelector('.button').addEventListener('click', evnt => {
+document.querySelector('.button').addEventListener('click', function (evnt) {
   if (XEClipboard.copy('Copy this content to the clipboard.')) {
     alert('Copy success.')
   } else {

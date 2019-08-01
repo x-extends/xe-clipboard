@@ -18,23 +18,32 @@
   });
   _exports["default"] = void 0;
   var doc = window.document;
+  var $elem = doc.createElement('textarea');
 
-  function getContainer() {
-    var $copy = doc.getElementById('$XECopy');
+  function handleText(content) {
+    var styles = $elem.style;
+    $elem.id = '$XECopy';
+    styles.width = '48px';
+    styles.height = '24px';
+    styles.position = 'fixed';
+    styles.zIndex = '0';
+    styles.left = '-500px';
+    styles.top = '-500px';
+    $elem.value = content === null || content === undefined ? '' : '' + content;
 
-    if (!$copy) {
-      $copy = doc.createElement('input');
-      $copy.id = '$XECopy';
-      $copy.style['width'] = '48px';
-      $copy.style['height'] = '12px';
-      $copy.style['position'] = 'fixed';
-      $copy.style['z-index'] = '0';
-      $copy.style['left'] = '-500px';
-      $copy.style['top'] = '-500px';
-      doc.body.appendChild($copy);
+    if (!$elem.parentNode) {
+      doc.body.appendChild($elem);
     }
+  }
 
-    return $copy;
+  function selectText() {
+    $elem.focus();
+    $elem.select();
+    $elem.setSelectionRange(0, $elem.value.length);
+  }
+
+  function copyText(showDefault) {
+    return doc.execCommand('copy', showDefault);
   }
   /**
    * Copy the contents to the clipboard.
@@ -44,17 +53,20 @@
 
 
   function XEClipboard(content) {
-    var $copy = getContainer();
-    var value = content === null || content === undefined ? '' : '' + content;
+    var result = false;
 
     try {
-      $copy.value = value;
-      $copy.focus();
-      $copy.setSelectionRange(0, value.length);
-      return doc.execCommand('copy', true);
+      handleText(content);
+      selectText();
+      result = copyText();
+
+      if (!result) {
+        selectText();
+        result = copyText(true);
+      }
     } catch (e) {}
 
-    return false;
+    return result;
   }
 
   XEClipboard.copy = XEClipboard;
