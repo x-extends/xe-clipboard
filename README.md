@@ -28,7 +28,7 @@ Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr
 
 ## Example
 
-[Run this demo on jsfiddle.net](https://jsfiddle.net/fjvckd2a/)
+[Run Test](https://jsfiddle.net/fjvckd2a/)
 
 ```html
 <button class="button">复制</button>
