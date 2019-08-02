@@ -40,7 +40,7 @@
     $elem.focus();
     $elem.select();
     $elem.setSelectionRange(0, $elem.value.length);
-    return doc.execCommand.apply(doc, 'copy', arguments);
+    return doc.execCommand.apply(doc, ['copy'].concat(arguments));
   }
   /**
    * Copy the contents to the clipboard.
