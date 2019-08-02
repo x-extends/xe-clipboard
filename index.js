@@ -22,7 +22,7 @@ function copyText (showDefault) {
   $elem.focus()
   $elem.select()
   $elem.setSelectionRange(0, $elem.value.length)
-  return doc.execCommand('copy', showDefault)
+  return doc.execCommand('copy', !!showDefault)
 }
 
 /**
@@ -36,7 +36,7 @@ function XEClipboard (content) {
     handleText(content)
     result = copyText()
     if (!result) {
-      result = copyText(true)
+      result = copyText(1)
     }
   } catch (e) {}
   return result
