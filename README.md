@@ -6,7 +6,7 @@
 [![npm license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/xuliangzhan/xe-clipboard/blob/master/LICENSE)
 
 It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) APIs, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android.  
-compressed by gzip: < 1KB
+compressed by gzip: < 0.5KB
 
 ## Browser Support
 
