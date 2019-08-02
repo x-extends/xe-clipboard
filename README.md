@@ -31,7 +31,7 @@ Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr
 [Run Test](https://xuliangzhan.github.io/xe-clipboard/)
 
 ```html
-<button class="button">复制</button>
+<button class="button">Copy</button>
 ```
 
 ```javascript
