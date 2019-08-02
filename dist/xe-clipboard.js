@@ -36,14 +36,11 @@
     }
   }
 
-  function selectText() {
+  function copyText() {
     $elem.focus();
     $elem.select();
     $elem.setSelectionRange(0, $elem.value.length);
-  }
-
-  function copyText(showDefault) {
-    return doc.execCommand('copy', showDefault);
+    return doc.execCommand.apply(doc, 'copy', arguments);
   }
   /**
    * Copy the contents to the clipboard.
@@ -57,11 +54,9 @@
 
     try {
       handleText(content);
-      selectText();
       result = copyText();
 
       if (!result) {
-        selectText();
         result = copyText(true);
       }
     } catch (e) {}
