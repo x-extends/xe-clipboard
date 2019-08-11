@@ -46,4 +46,4 @@ document.querySelector('.button').addEventListener('click', function (evnt) {
 
 ## License
 
-Copyright (c) 2017-present, Xu Liangzhan
+MIT License, 2017-present, Xu Liangzhan
