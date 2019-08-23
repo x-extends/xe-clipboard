@@ -1,13 +1,13 @@
 export interface XEClipboardMethods {
   /**
-   * Copy the contents to the clipboard.
-   * @param content Content
+   * Copy text to clipboard.
+   * @param content Text
    */
-  copy(content: string): boolean;
+  copy(content: string | number): boolean;
 }
 
 /**
- * Copy the contents to the clipboard.
+ * Copy text to clipboard.
  */
 declare var XEClipboard: XEClipboardMethods;
 

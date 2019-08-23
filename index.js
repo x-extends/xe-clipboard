@@ -26,9 +26,9 @@ function copyText (showDefault) {
 }
 
 /**
- * Copy the contents to the clipboard.
+ * Copy text to clipboard.
  *
- * @param {String} content Content
+ * @param {String} content Text
  */
 function XEClipboard (content) {
   var result = false
