@@ -5,8 +5,7 @@
 [![gzip size: JS](http://img.badgesize.io/https://unpkg.com/xe-clipboard/dist/xe-clipboard.min.js?compression=gzip&label=gzip%20size:%20JS)](https://unpkg.com/xe-clipboard/dist/xe-clipboard.min.js)
 [![npm license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/xuliangzhan/xe-clipboard/blob/master/LICENSE)
 
-It depends on the [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) APIs, support commonly used H5 browser IE, Chrome, Firefox, Opera, Safari, IOS, Android.  
-compressed by gzip: < 0.5KB
+基于 [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) API 实现复制内容到剪贴板，支持主流的 H5 浏览器 IE, Chrome, Firefox, Opera, Safari, IOS, Android，压缩大小 < 0.5KB  
 
 ## Browser Support
 
