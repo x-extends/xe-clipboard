@@ -18,26 +18,23 @@ function handleText (content) {
   }
 }
 
-function copyText (showDefault) {
+function copyText () {
   $elem.focus()
   $elem.select()
   $elem.setSelectionRange(0, $elem.value.length)
-  return doc.execCommand('copy', !!showDefault)
+  return doc.execCommand('copy')
 }
 
 /**
- * Copy text to clipboard.
+ * 复制内容到剪贴板
  *
- * @param {String} content Text
+ * @param {String} content Text 内容
  */
 function XEClipboard (content) {
   var result = false
   try {
     handleText(content)
     result = copyText()
-    if (!result) {
-      result = copyText(1)
-    }
   } catch (e) {}
   return result
 }
