@@ -13,7 +13,8 @@ gulp.task('build_commonjs', function () {
   return gulp.src(['index.ts'])
     .pipe(sourcemaps.init())
     .pipe(ts({
-      noImplicitAny: true
+      noImplicitAny: true,
+      target: 'es6'
     }))
     .pipe(babel({
       presets: ['@babel/env']
