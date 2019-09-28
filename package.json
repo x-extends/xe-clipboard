@@ -9,7 +9,8 @@
   },
   "files": [
     "dist",
-    "index.ts"
+    "index.ts",
+    "index.d.ts"
   ],
   "main": "dist/xe-clipboard.common.js",
   "style": "dist/style.min.css",
