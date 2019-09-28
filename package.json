@@ -1,34 +1,39 @@
 {
   "name": "xe-clipboard",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "纯 Javascript 实现复制文本到剪贴板，支持IE、Chrome、Firefox、Opera、Safari、IOS、Android",
-  "main": "index.js",
-  "unpkg": "dist/xe-clipboard.js",
-  "jsdelivr": "dist/xe-clipboard.js",
-  "typings": "index.d.ts",
   "scripts": {
     "lib": "gulp build",
-    "lint": "eslint index.js",
+    "lint": "eslint index.ts",
     "test": "npm run lint"
   },
   "files": [
     "dist",
-    "index.js",
-    "*.d.ts"
+    "index.ts"
   ],
+  "main": "dist/xe-clipboard.common.js",
+  "style": "dist/style.min.css",
+  "unpkg": "dist/xe-clipboard.min.js",
+  "jsdelivr": "dist/xe-clipboard.min.js",
+  "typings": "index.ts",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/runtime": "^7.4.4",
-    "babel-preset-es2015": "^6.24.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "del": "^5.1.0",
     "eslint": "^5.15.1",
     "eslint-config-standard": "^12.0.0",
+    "eslint-config-prettier": "^6.3.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-typescript": "^0.14.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
@@ -37,8 +42,12 @@
     "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
     "gulp-uglify": "^3.0.2",
-    "markdown-doctest": "^0.9.1"
+    "markdown-doctest": "^0.9.1",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
   },
   "repository": {
     "type": "git",

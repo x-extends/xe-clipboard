@@ -3,7 +3,7 @@
 var doc = window.document
 var $elem = doc.createElement('textarea')
 
-function handleText (content) {
+function handleText (content: string | number) {
   var styles = $elem.style
   $elem.id = '$XECopy'
   styles.width = '48px'
@@ -30,7 +30,7 @@ function copyText () {
  *
  * @param {String} content Text 内容
  */
-function XEClipboard (content) {
+function XEClipboard (content: string | number) {
   var result = false
   try {
     handleText(content)
