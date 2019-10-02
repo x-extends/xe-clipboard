@@ -18,7 +18,7 @@ function handleText (content: string | number) {
   }
 }
 
-function copyText () {
+function copyText (): boolean {
   $elem.focus()
   $elem.select()
   $elem.setSelectionRange(0, $elem.value.length)
@@ -30,7 +30,7 @@ function copyText () {
  *
  * @param {String} content Text 内容
  */
-function XEClipboard (content: string | number) {
+function XEClipboard (content: string | number): boolean {
   var result = false
   try {
     handleText(content)
