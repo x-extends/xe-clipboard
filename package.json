@@ -48,7 +48,7 @@
     "gulp-uglify": "^3.0.2",
     "markdown-doctest": "^0.9.1",
     "prettier": "^1.18.2",
-    "typescript": "^3.6.3"
+    "typescript": "^3.7.2"
   },
   "repository": {
     "type": "git",
