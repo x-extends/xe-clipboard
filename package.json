@@ -1,6 +1,6 @@
 {
   "name": "xe-clipboard",
-  "version": "1.7.2",
+  "version": "1.8.0",
   "description": "纯 Javascript 实现复制文本到剪贴板，支持IE、Chrome、Firefox、Opera、Safari、IOS、Android",
   "scripts": {
     "lib": "gulp build",
@@ -52,7 +52,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuliangzhan/xe-clipboard.git"
+    "url": "git+https://github.com/x-extends/xe-clipboard.git"
   },
   "keywords": [
     "clipboard",
@@ -65,7 +65,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xuliangzhan/xe-clipboard/issues"
+    "url": "https://github.com/x-extends/xe-clipboard/issues"
   },
-  "homepage": "https://github.com/xuliangzhan/xe-clipboard#readme"
+  "homepage": "https://github.com/x-extends/xe-clipboard#readme"
 }
