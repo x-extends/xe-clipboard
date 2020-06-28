@@ -1,28 +1,34 @@
 'use strict'
 
 var doc = window.document
-var $elem = doc.createElement('textarea')
+var copyElem: HTMLTextAreaElement
 
 function handleText (content: string | number) {
-  var styles = $elem.style
-  $elem.id = '$XECopy'
-  styles.width = '48px'
-  styles.height = '24px'
-  styles.position = 'fixed'
-  styles.zIndex = '0'
-  styles.left = '-500px'
-  styles.top = '-500px'
-  $elem.value = content === null || content === undefined ? '' : ('' + content)
-  if (!$elem.parentNode) {
-    doc.body.appendChild($elem)
+  if (!copyElem) {
+    copyElem = doc.createElement('textarea')
+    copyElem.id = '$XECopy'
+    var styles = copyElem.style
+    styles.width = '48px'
+    styles.height = '24px'
+    styles.position = 'fixed'
+    styles.zIndex = '0'
+    styles.left = '-500px'
+    styles.top = '-500px'
+    doc.body.appendChild(copyElem)
   }
+  copyElem.value = content === null || content === undefined ? '' : ('' + content)
 }
 
-function copyText (): boolean {
-  $elem.focus()
-  $elem.select()
-  $elem.setSelectionRange(0, $elem.value.length)
-  return doc.execCommand('copy')
+function copyText (content: string | number): boolean {
+  var result = false
+  try {
+    handleText(content)
+    copyElem.focus()
+    copyElem.select()
+    copyElem.setSelectionRange(0, copyElem.value.length)
+    result = doc.execCommand('copy')
+  } catch (e) {}
+  return result
 }
 
 /**
@@ -31,14 +37,9 @@ function copyText (): boolean {
  * @param {String} content Text 内容
  */
 function XEClipboard (content: string | number): boolean {
-  var result = false
-  try {
-    handleText(content)
-    result = copyText()
-  } catch (e) {}
-  return result
+  return copyText(content)
 }
 
-XEClipboard.copy = XEClipboard
+XEClipboard.copy = copyText
 
 export default XEClipboard

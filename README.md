@@ -32,11 +32,11 @@ Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr
 [Run Test](https://xuliangzhan.com/xe-clipboard/)
 
 ```html
-<button class="btn">Copy</button>
+<button id="btn1">Copy</button>
 ```
 
 ```javascript
-document.querySelector('.btn').addEventListener('click', function (evnt) {
+document.getElementById('btn1').addEventListener('click', function (evnt) {
   if (XEClipboard.copy('Copy this content to the clipboard.')) {
     alert('Copy success.')
   } else {
