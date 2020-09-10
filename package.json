@@ -1,6 +1,6 @@
 {
   "name": "xe-clipboard",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "纯 Javascript 实现复制文本到剪贴板，支持IE、Chrome、Firefox、Opera、Safari、IOS、Android",
   "scripts": {
     "lib": "gulp build",
@@ -13,9 +13,8 @@
     "*.d.ts"
   ],
   "main": "dist/xe-clipboard.common.js",
-  "style": "dist/style.min.css",
-  "unpkg": "dist/xe-clipboard.min.js",
-  "jsdelivr": "dist/xe-clipboard.min.js",
+  "unpkg": "dist/xe-clipboard.umd.min.js",
+  "jsdelivr": "dist/xe-clipboard.umd.min.js",
   "typings": "index.ts",
   "devDependencies": {
     "@babel/core": "^7.4.4",

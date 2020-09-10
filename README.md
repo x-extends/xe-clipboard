@@ -21,9 +21,7 @@
 npm install xe-clipboard
 ```
 
-Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr.net/npm/xe-clipboard/)
-
-```HTML
+```xml
 <script src="https://cdn.jsdelivr.net/npm/xe-clipboard"></script>
 ```
 
@@ -37,6 +35,7 @@ Get on [unpkg](https://unpkg.com/xe-clipboard/) and [cdnjs](https://cdn.jsdelivr
 
 ```javascript
 document.getElementById('btn1').addEventListener('click', function (evnt) {
+  // 由于浏览器的安全机制，操作剪贴板必须在事件之内才能有效
   if (XEClipboard.copy('Copy this content to the clipboard.')) {
     alert('Copy success.')
   } else {
