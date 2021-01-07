@@ -1,6 +1,6 @@
 {
   "name": "xe-clipboard",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "纯 Javascript 实现复制文本到剪贴板，支持IE、Chrome、Firefox、Opera、Safari、IOS、Android",
   "scripts": {
     "lib": "gulp build",

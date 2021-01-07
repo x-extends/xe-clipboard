@@ -23,7 +23,6 @@ function copyText (content: string | number): boolean {
   var result = false
   try {
     handleText(content)
-    copyElem.focus()
     copyElem.select()
     copyElem.setSelectionRange(0, copyElem.value.length)
     result = doc.execCommand('copy')
