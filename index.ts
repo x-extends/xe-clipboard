@@ -26,7 +26,6 @@ function copyText (content: string | number): boolean {
     copyElem.select()
     copyElem.setSelectionRange(0, copyElem.value.length)
     result = doc.execCommand('copy')
-    copyElem.blur()
   } catch (e) {}
   return result
 }
