@@ -26,8 +26,6 @@ npm install xe-clipboard
 
 ## Example
 
-[Run Test](https://xuliangzhan.com/xe-clipboard/)
-
 ```html
 <button id="btn1">Copy</button>
 ```
