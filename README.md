@@ -3,7 +3,6 @@
 [![gitee star](https://gitee.com/x-extends/xe-clipboard/badge/star.svg?theme=dark)](https://gitee.com/x-extends/xe-clipboard/stargazers)
 [![npm version](https://img.shields.io/npm/v/xe-clipboard.svg?style=flat-square)](https://www.npmjs.com/package/xe-clipboard)
 [![npm downloads](https://img.shields.io/npm/dm/xe-clipboard.svg?style=flat-square)](http://npm-stat.com/charts.html?package=xe-clipboard)
-[![gzip size: JS](http://img.badgesize.io/https://unpkg.com/xe-clipboard/dist/xe-clipboard.umd.min.js?compression=gzip&label=gzip%20size:%20JS)](https://unpkg.com/xe-clipboard/dist/xe-clipboard.umd.min.js)
 [![npm license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
 基于 [execCommand](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand) API 实现复制内容到剪贴板，支持主流的 H5 浏览器 IE, Chrome, Firefox, Opera, Safari, IOS, Android  
