@@ -44,6 +44,12 @@ document.getElementById('btn1').addEventListener('click', function (evnt) {
 })
 ```
 
+## Contributors
+
+Thank you to everyone who contributed to this project.
+
+[![xe-clipboard](https://contrib.rocks/image?repo=x-extends/xe-clipboard)](https://github.com/x-extends/xe-clipboard/graphs/contributors)
+
 ## License
 
 [MIT](LICENSE) © 2017-present, Xu Liangzhan
